@@ -17,7 +17,7 @@
     scp [ opcoes ] < usuario_fonte@endereco_IP >:/ < diretorio_do_arquivo_fonte/ arquivo_fonte > < usuario_destino@endereco_IP >:
     /<diretorio_do_arquivo_destino / arquivo_destino >
 5. Navegue até o arquivo
-6. Execute make e make run no terminall
+6. Execute make e make run no terminal
  ```
 
 # 📖 Introdução
