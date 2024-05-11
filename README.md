@@ -3,6 +3,11 @@
 <img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/4604e0bb-e27d-4e8e-82e6-9690a45485ad">
 </div>
 
+#  Como rodar o projeto
+
+1. Faça o clone do repositório
+2. 
+
 # 📖 Introdução
 
 Os jogos eletrônicos desempenham um papel crucial na convergência entre tecnologia e entretenimento, impulsionando avanços em diversos setores. Mesmo em sua forma mais básica, como o jogo da velha, eles oferecem uma oportunidade cativante para explorar estratégias e desfrutar de momentos de diversão. Este projeto tem como objetivo desenvolver uma versão eletrônica do jogo da velha, utilizando a placa de desenvolvimento De1-SoC e seus periféricos. Ao integrar o movimento dos quadrantes do tabuleiro através de um mouse, o projeto ilustra de forma prática como a tecnologia pode ser aplicada em um ambiente familiar, destacando a versatilidade das plataformas de desenvolvimento e o potencial de inovação oferecido pela tecnologia moderna.
@@ -115,11 +120,25 @@ Funções das chaves:
 
 #  📟 Interface do sistema
 
-No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, permitindo que os jogadores interajam com ele através do mouse e das chaves HH. O tabuleiro é representado graficamente com caracteres ASCII simples, e os jogadores selecionam as posições desejadas através mouse. O jogo continua até que um jogador vença ou ocorra um empate, com mensagens indicativas exibidas no terminal para informar o resultado. Essa abordagem oferece uma forma simples e acessível de desfrutar do jogo da velha em sistemas Linux, sem a necessidade de interfaces gráficas complexas.
+No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, permitindo que os jogadores interajam com ele através do mouse e das chaves HH. O tabuleiro é representado graficamente com caracteres ASCII simples, e os jogadores selecionam as posições desejadas através mouse. O jogo continua até que um jogador vença ou ocorra um empate, com mensagens indicativas exibidas no terminal para informar o resultado. Essa abordagem oferece uma forma simples e acessível de desfrutar do jogo da velha em sistemas Linux, sem a necessidade de interfaces gráficas complexas. A figura abaixo representa a exibição do sitema no terminal.
+
+<div align="center">
+<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/13831033-2fd8-4542-aca2-e2e5f08c4dbd" width="700">
+</div>
 
 # 🕹️ Funcionamento do jogo
 
-Para iniciar o jogo, é necessário colocar a chave SW0 em nível lógico alto. Se a chave estiver ativada, o tabuleiro será automaticamente gerado. Com o tabuleiro pronto, o jogo pode ser iniciado. O primeiro jogador realiza sua jogada e, após a confirmação com o click no botão direito do mouse, o caractere "X" é inserido na célula escolhida. Em seguida, é a vez do segundo jogador, representado por "O", realizar sua jogada. Esse padrão de alternância continua até que o número máximo de jogadas (n=9) seja alcançado. Ao atingir esse limite, é feita uma verificação para determinar se há um vencedor ou se o jogo termina em empate, sendo o resultado exibido no console. A qualquer momento durante o jogo, os jogadores podem optar por encerrá-lo, colocando a chave SW1 em nível lógico alto.
+Para iniciar o jogo, é necessário colocar a chave SW0 em nível lógico alto. Se a chave estiver ativada, o tabuleiro será automaticamente gerado. Com o tabuleiro pronto, o jogo pode ser iniciado. O primeiro jogador realiza sua jogada e, após a confirmação com o click no botão direito do mouse, o caractere "X" é inserido na célula escolhida. Em seguida, é a vez do segundo jogador, representado por "O", realizar sua jogada. Esse padrão de alternância continua até que o número máximo de jogadas (n=9) seja alcançado. Ao atingir esse limite, é feita uma verificação para determinar se há um vencedor ou se o jogo termina em empate, sendo o resultado exibido no console. A qualquer momento durante o jogo, os jogadores podem optar por encerrá-lo, colocando a chave SW1 em nível lógico alto. Desse modo o fluxograma fica dessa maneira:
+
+<div align="center">
+<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/e1add543-f36e-44ec-8536-ce5a5d40fbe1" width="800">
+</div>
+<div align="center">
+<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/22cdc9fe-5e91-4d77-828f-07e498b9a6ea" width="800">
+</div>
+<div align="center">
+<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/92d9779d-6a20-45cc-9202-618f152c01fe" width="800">
+</div>
 
 # Autores
 
