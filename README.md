@@ -3,16 +3,28 @@
 <img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/6b86920f-36a2-4e48-81a5-c92a8f31be48">
 </div>
 
-#  Como rodar o projeto
-
-1. Faça o clone do repositório
-2. 
+#  ✅ Como rodar o projeto
+ - ### Requisitos
+ ```py 
+ 1. Sistema Operacional Linux
+ 2. Kit de desenvolvimento De1-Soc
+ ```
+ - ### Passo a passo
+ ```py 
+1. Clone esse repositório para sua máquina [git clone URL]
+2. Faça conexão com a placa [ssh aluno@IP]
+3. Faça uma cópia do arquivo para a placa por meio do scp
+    scp [ opcoes ] < usuario_fonte@endereco_IP >:/ < diretorio_do_arquivo_fonte/ arquivo_fonte > < usuario_destino@endereco_IP >:
+    /<diretorio_do_arquivo_destino / arquivo_destino >
+5. Navegue até o arquivo
+6. Execute make e make run no terminall
+ ```
 
 # 📖 Introdução
 
 Os jogos eletrônicos desempenham um papel crucial na convergência entre tecnologia e entretenimento, impulsionando avanços em diversos setores. Mesmo em sua forma mais básica, como o jogo da velha, eles oferecem uma oportunidade cativante para explorar estratégias e desfrutar de momentos de diversão. Este projeto tem como objetivo desenvolver uma versão eletrônica do jogo da velha, utilizando a placa de desenvolvimento De1-SoC e seus periféricos. Ao integrar o movimento dos quadrantes do tabuleiro através de um mouse, o projeto ilustra de forma prática como a tecnologia pode ser aplicada em um ambiente familiar, destacando a versatilidade das plataformas de desenvolvimento e o potencial de inovação oferecido pela tecnologia moderna.
 
-# 🎯 Requistos do sistema
+# 🎯 Requisitos do sistema
 - [x] Elaboração do código-fonte em C
 - [x] O sistema só poderá utilizar os componentes disponíveis na placa.
 
@@ -34,7 +46,7 @@ Os jogos eletrônicos desempenham um papel crucial na convergência entre tecnol
 - ### SSH
 
     O SSH (Secure Shell) é um protocolo de rede usado para comunicação segura e controle remoto de dispositivos através de uma conexão criptografada. Ele é amplamente utilizado para acessar servidores e dispositivos remotos pela internet, garantindo a proteção das informações transmitidas por meio de criptografia forte.
-# Kit de Desenvolvimento De1-Soc
+# ⚙️ Kit de Desenvolvimento De1-Soc
 A Plataforma De1-SoC é uma solução de hardware robusta que integra os poderosos núcleos Cortex-A9 com a flexibilidade de um FPGA. Isso permite aos usuários criar sistemas altamente adaptáveis, combinando desempenho de processamento com capacidade de personalização. Além disso, o SoC inclui um sistema de processador (HPS) baseado em ARM, conectado ao FPGA, facilitando a comunicação eficiente entre o processador e a lógica programável. Com recursos como memória DDR3, capacidades de vídeo e áudio e conectividade Ethernet, a placa DE1 SoC é ideal para uma variedade de aplicações.
 
 </br>
@@ -50,7 +62,7 @@ O diagrama de blocos da placa mostra como os componentes estão interconectados.
 </div>
 </br>
 
-# 🖥️ Arquitetura do processador Cortex-A9
+# 🖥️ Arquitetura do processador ARM Cortex-A9
 O processador Cortex-A9 800MHz MPCore é um design de CPU baseado na arquitetura ARMv7 , seguindo a Instruction Set Architecture (ISA) específico dessa arquitetura. Com um clock de 800MHz, este processador é dual-core, significando que possui dois núcleos de CPU idênticos. Cada núcleo possui sua própria hierarquia de cache, incluindo caches L1 (instrução e dados) e um cache L2 compartilhado entre os núcleos. Além disso, o Cortex-A9 é projetado com uma pipeline moderadamente profunda, aproveitando unidades funcionais especializadas, como unidades de execução aritmética e lógica, unidades de acesso à memória e unidades de controle de fluxo, para otimizar a execução de instruções e maximizar o desempenho geral da CPU.
 
 # ⛏️ Construção do tabuleiro
@@ -110,7 +122,7 @@ O arquivo `/dev/input/mice` desempenha um papel crucial no registro de eventos d
 ### ➡️Função do mouse 
 O mouse desempenha um papel central no jogo da velha, permitindo que os jogadores naveguem pelo tabuleiro e selecionem quadrantes de interesse através de cliques. Ele opera com movimentos relativos, representando mudanças nas coordenadas x e y em um plano cartesiano (R2). A lógica subjacente a esses movimentos é baseada na contínua alteração das coordenadas (x, y) à medida que o mouse é deslocado. Os dados relativos a esses movimentos não são transmitidos imediatamente, mas sim gradualmente, refletindo o deslocamento completo realizado.
 
-### ➡️ Controle do jogos por chaves HH
+### ➡️ Controle do jogo por chaves HH
 
 No sistema, duas chaves HH do kit DE1-SoC foi usada para permitir que o usuário reinicie o jogo e finalize o jogo. Para ler os valores digitados nessas chaves, os recursos disponíveis na placa para o sistema operacional foram utilizados. A biblioteca intelfpgaup oferece acesso aos drivers dos dispositivos nativos da placa, com os cabeçalhos das funções disponibilizadas e documentadas em arquivos de extensão ".h". Para incluir essa biblioteca, responsavel pelo controle das chaves foi colocado `#include <intelfpgaup/SW.h>` no início do código. As chaves são ativadas por meio de nível lógico alto.
 
@@ -225,6 +237,11 @@ root@de1soclinux:/home/aluno/TEC499/TP02/G04
 <div align="center">
 <img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/42aac2a0-d0b1-45d9-b2a8-9336b41dac2c" width="800">
 </div>
+
+# Referências
+- https://www.design-reuse.com/articles/16875/the-arm-cortex-a9-processors.html
+
+- 
 
 # Autores
 
