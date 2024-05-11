@@ -13,7 +13,7 @@
  ```py 
 1. Clone esse repositório para sua máquina [git clone URL]
 2. Faça conexão com a placa [ssh aluno@IP]
-3. Faça uma cópia do arquivo para a placa por meio do scp
+3. Faça uma cópia do arquivo para a placa por meio do scp:
     scp [ opcoes ] < usuario_fonte@endereco_IP >:/ < diretorio_do_arquivo_fonte/ arquivo_fonte > < usuario_destino@endereco_IP >:
     /<diretorio_do_arquivo_destino / arquivo_destino >
 5. Navegue até o arquivo
