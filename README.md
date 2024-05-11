@@ -140,7 +140,7 @@ O quadrante que o jogador está selecionando é: 5
 
 Para iniciar o jogo, é necessário colocar a chave SW0 em nível lógico alto. Se a chave estiver ativada, o tabuleiro será automaticamente gerado. Com o tabuleiro pronto, o jogo pode ser iniciado. O primeiro jogador realiza sua jogada e, após a confirmação com o click no botão direito do mouse, o caractere "X" é inserido na célula escolhida. Em seguida, é a vez do segundo jogador, representado por "O", realizar sua jogada. Esse padrão de alternância continua até que o número máximo de jogadas (n=9) seja alcançado. Ao atingir esse limite, é feita uma verificação para determinar se há um vencedor ou se o jogo termina em empate, sendo o resultado exibido no console. A qualquer momento durante o jogo, os jogadores podem optar por encerrá-lo, colocando a chave SW1 em nível lógico alto. 
 
-1. Inicio do jogo, acionando a chave SW0
+1. Inicio do jogo, acionando a chave SW0.
 ```text
 0 | 1 | 2
 ---------
@@ -155,7 +155,7 @@ O quadrante que o jogador está selecionando é: 1
 ```
 
 
-2. Após um jogador efeturar uma jogada
+2. Após um jogador efeturar uma jogada.
 ```text
 X | 1 | 2
 ---------
@@ -171,7 +171,7 @@ Linha 1, Coluna 1
 Jogada realiazda com sucesso
 ```
 
-3. Caso for feito uma jogada em um célula já ocupada
+3. Caso for feito uma jogada em um célula já ocupada.
 ```text
 X | 2 | 3
 ---------
@@ -187,7 +187,7 @@ Linha 1, Coluna 1
 O quadrante já está ocupado, tente realizar sua jogada em um quadrante vazio
 ```
 
-4. Caso um dos jogadores vença
+4. Caso um dos jogadores vença.
 ```text
 X | X | O
 ---------
@@ -198,7 +198,7 @@ X | O | X
 ============================================
 Jogador 1 foi o vencedor!
 ```
-5. Caso de empate
+5. Caso de empate.
 ```text
 O | X | O
 ---------
@@ -209,7 +209,7 @@ X | O | X
 ============================================
 O jogo terminou em empate!
 ```
-6. Caso de empate
+6. Se o jogo for encerrado, ativando a chave SW1.
 ```text
 ===========Sistema finalizado===========
 root@de1soclinux:/home/aluno/TEC499/TP02/G04
