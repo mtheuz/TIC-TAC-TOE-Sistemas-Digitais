@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/4604e0bb-e27d-4e8e-82e6-9690a45485ad">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/6b86920f-36a2-4e48-81a5-c92a8f31be48">
 </div>
 
 #  Como rodar o projeto
@@ -39,14 +39,14 @@ A Plataforma De1-SoC é uma solução de hardware robusta que integra os poderos
 
 </br>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/5a6adc81-fdb7-46eb-ad27-0ab0ee4d9a87" width="700">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/18d11607-03e9-4068-8bd0-31e46bd1895c" width="700">
 </div>
 </br>
 
 O diagrama de blocos da placa mostra como os componentes estão interconectados. Todas as conexões são feitas por meio do dispositivo Cyclone V SoC FPGA para oferecer aos usuários a maior flexibilidade possível. Isso significa que os usuários têm a liberdade de configurar o FPGA de acordo com suas necessidades específicas, permitindo a implementação de uma ampla variedade de designs de sistemas.
 </br>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/5f62a301-7666-4f65-892b-710651068190" width="700">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/b623ebde-9feb-4b2f-a57f-4e8153df9faf" width="700">
 </div>
 </br>
 
@@ -58,21 +58,21 @@ O processador Cortex-A9 800MHz MPCore é um design de CPU baseado na arquitetura
 O jogo da velha é configurado usando uma matriz de caracteres de dimensão 3x3. Cada célula na matriz foi designada com um número de 1 a 9. Essa técnica foi adotada para simplificar a percepção visual do jogador, permitindo uma identificação clara da posição das células.
 
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/9ff6f41d-fade-4bd3-9ab1-6946f8234eb9" width="400">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/7f569e6f-136f-4912-87d9-d359715b5ca2" width="400">
 </div>
 
 ### ➡️ Lógica do vencedor
 Para determinar o vencedor, o código verifica as linhas, colunas e diagonais da matriz do jogo. Se encontrar um padrão de elementos iguais em uma linha, coluna ou diagonal, ele determina o vencedor de acordo com o jogador atual, caso o código não determine um vencedor o jogo é declarado em empate.
 </br>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/7e3abc6b-17a3-4c0c-bce9-cac809fa27af" width="400">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/d29b87b2-de34-4758-8d1b-2e6680184f3c" width="400">
 </div>
 
 ### ➡️ Delimimitação do tabuleiro
 Para garantir a precisão do funcionamento do tabuleiro, foi definida uma área delimitada para cada célula. Essa medida possibilita identificar, com base nas coordenadas x e y, qual célula está sendo selecionada em um dado momento.
 </br>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/ae19b6be-0a94-4063-83c6-0c99a92410c1" width="400">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/fe71d98d-cce4-434b-aab5-1b8621ddf74c" width="400">
 </div>
 </br>
 
@@ -99,7 +99,7 @@ O SMSC USB3300 é apresentado em um pacote QFN de 32 pinos, uma forma de encapsu
 Uma característica importante do SMSC USB3300 é sua capacidade de operar no modo Host. Isso significa que o dispositivo pode assumir o controle da comunicação USB, em vez de apenas responder a comandos de dispositivos conectados. Essa funcionalidade é ativada ao conectar o pino de identificação (ID) do USB3300 ao terra, indicando que ele deve operar como o principal controlador USB. Quando em modo Host, o dispositivo é alimentado pelas duas portas USB tipo A, garantindo seu funcionamento mesmo em condições de uso intensivo.
 
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/a8a0b987-80de-483b-8988-7076b705fcbf" width="800">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/900aa8d2-06c3-4685-97e1-8ab14dba6864" width="800">
 </div>
 
 ### ➡️ Captura dos dados do mouse
@@ -123,7 +123,7 @@ Funções das chaves:
 No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, permitindo que os jogadores interajam com ele através do mouse e das chaves HH. O tabuleiro é representado graficamente com caracteres ASCII simples, e os jogadores selecionam as posições desejadas através mouse. O jogo continua até que um jogador vença ou ocorra um empate, com mensagens indicativas exibidas no terminal para informar o resultado. Essa abordagem oferece uma forma simples e acessível de desfrutar do jogo da velha em sistemas Linux, sem a necessidade de interfaces gráficas complexas. A figura abaixo representa a exibição do sitema no terminal.
 
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/13831033-2fd8-4542-aca2-e2e5f08c4dbd" width="700">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/9f79134e-9e4f-40aa-9dbc-af5c892f2eee" width="700">
 </div>
 
 # 🕹️ Funcionamento do jogo
@@ -131,13 +131,13 @@ No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, perm
 Para iniciar o jogo, é necessário colocar a chave SW0 em nível lógico alto. Se a chave estiver ativada, o tabuleiro será automaticamente gerado. Com o tabuleiro pronto, o jogo pode ser iniciado. O primeiro jogador realiza sua jogada e, após a confirmação com o click no botão direito do mouse, o caractere "X" é inserido na célula escolhida. Em seguida, é a vez do segundo jogador, representado por "O", realizar sua jogada. Esse padrão de alternância continua até que o número máximo de jogadas (n=9) seja alcançado. Ao atingir esse limite, é feita uma verificação para determinar se há um vencedor ou se o jogo termina em empate, sendo o resultado exibido no console. A qualquer momento durante o jogo, os jogadores podem optar por encerrá-lo, colocando a chave SW1 em nível lógico alto. Desse modo o fluxograma fica dessa maneira:
 
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/e1add543-f36e-44ec-8536-ce5a5d40fbe1" width="800">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/4c9f96d7-9ac9-4a26-b9ec-2024be71ad49" width="800">
 </div>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/22cdc9fe-5e91-4d77-828f-07e498b9a6ea" width="800">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/71997eb1-7eeb-4404-9a3b-2218af44eb94" width="800">
 </div>
 <div align="center">
-<img src="https://github.com/mtheuz/Problema-1--Sistema-Digitais/assets/77650601/92d9779d-6a20-45cc-9202-618f152c01fe" width="800">
+<img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/42aac2a0-d0b1-45d9-b2a8-9336b41dac2c" width="800">
 </div>
 
 # Autores
