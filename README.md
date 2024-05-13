@@ -167,7 +167,7 @@ O quadrante que o jogador está selecionando é: 1
 ```
 
 
-2. Após um jogador efeturar uma jogada.
+2. Após um jogador efetuar uma jogada.
 ```text
 X | 1 | 2
 ---------
@@ -241,7 +241,7 @@ root@de1soclinux:/home/aluno/TEC499/TP02/G04
 # Referências
 - https://www.design-reuse.com/articles/16875/the-arm-cortex-a9-processors.html
 
-- 
+- User Manual:  https://www.terasic.com.tw/cgi-bin/page/archive_download.pl?Language=English&No=836&FID=ae336c1d5103cac046279ed1568a8bc3
 
 # Autores
 
