@@ -183,7 +183,7 @@ Linha 1, Coluna 1
 Jogada realiazda com sucesso
 ```
 
-3. Caso for feito uma jogada em um célula já ocupada.
+3. Caso seja realizada uma jogada em uma célula já ocupada.
 ```text
 X | 2 | 3
 ---------
