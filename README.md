@@ -80,7 +80,7 @@ Para determinar o vencedor, o código verifica as linhas, colunas e diagonais da
 <img src="https://github.com/mtheuz/Problema-1--Sistemas-Digitais/assets/77650601/d29b87b2-de34-4758-8d1b-2e6680184f3c" width="400">
 </div>
 
-### ➡️ Delimimitação do tabuleiro
+### ➡️ Delimitação do tabuleiro
 Para garantir a precisão do funcionamento do tabuleiro, foi definida uma área delimitada para cada célula. Essa medida possibilita identificar, com base nas coordenadas x e y, qual célula está sendo selecionada em um dado momento.
 </br>
 <div align="center">
