@@ -5,7 +5,7 @@
     #include <intelfpgaup/SW.h>
     #include <stdint.h>
     
-    // Verifica se houve um vencedor e qual dos jogadores que foi e tambem verifica se ocorreu um empate
+    // Verifica se houve um vencedor e qual dos jogadores que foi e também verifica se ocorreu um empate
     char verificar_vencedor (char matriz[3][3]){
         int i = 0;
         int j = 0;
@@ -50,7 +50,7 @@
         }
         printf("\n\n======================================\n");
     }
-    // Retorna o quadrante atual que o jogador esta selecionando
+    // Retorna o quadrante atual que o jogador está selecionando
     int quadrante_atual(int coordenada_x, int coordenada_y) {
         // Definindo o tamanho de cada quadrante e quantas linhas e colunas tem o tabuleiro
         int tamanho_quadrante = 100; 
@@ -71,7 +71,7 @@
         int linha_da_jogada = 0;
         int coluna_da_jogada = 0;
     
-        // Definindo com base no numero do quadrante em que linha e coluna ele esta
+        // Definindo com base no número do quadrante em que linha e coluna ele está
         if (quadrante < 3){
             coluna_da_jogada = quadrante;
         } else if (quadrante >= 3 && quadrante < 6){
@@ -100,7 +100,7 @@
         return 0;
     }
 
-    // Reinicia as variavevis do jogo como o jogador atual, a rodada atual, a coordenada x e y e o tabuleiro
+    // Reinicia as variáveis do jogo como o jogador atual, a rodada atual, a coordenada x e y e o tabuleiro
     void resetar_jogo(int *jogador, int *rodada, int *coordenada_x, int *coordenada_y, char tabuleiro[3][3])
     {
         //Reiniciando para voltar o padrão das variaveis
@@ -183,7 +183,7 @@
     
         int rodada = 0;
         
-        //Variavel responsavel por controlar a vez de cada jogador, se for = 0 significa que o jogador atual é o X e se for = 1 significa que o jogador atual é o O
+        //Variável responsável por controlar a vez de cada jogador, se for = 0 significa que o jogador atual é o X e se for = 1 significa que o jogador atual é o O
         int jogador_atual = 0;
         int coordenada_da_jogada_matriz[2] = {0, 0};
     
@@ -198,16 +198,16 @@
             return -1;
         }
         
-        // Variavel para manter as coordenadas atuais que o jogador esta localizado no tabuleiro
+        // Variável para manter as coordenadas atuais que o jogador esta localizado no tabuleiro
         int coordenadas_atuais[2] = {0, 0};
     
-        // Variavel que indica qual o quadrante do tabuleiro o jogador esta selecionando
+        // Variável que indica qual o quadrante do tabuleiro o jogador esta selecionando
         int quadrante_selecionado = 0;
     
-        // Variavel que é alterada para 1 caso o jogador confirme a sua jogada
+        // Variável que é alterada para 1 caso o jogador confirme a sua jogada
         int confirma_jogada = 0;
     
-        // Breve introdução do funcionamento do do inicio e encerramento do programa
+        // Breve introdução do funcionamento do início e encerramento do programa
         printf("\nLembresse de como escolher cada uma das opcões:\n");
         printf("Chave SW0 Inicia novo jogo\n");
         printf("Chave SW1 sai do jogo por completo\n");
@@ -220,9 +220,9 @@
         int valor = 0;
         int *dados_sw = &valor;
     
-        //Lendo o valor da chave mais da direita (SW0) e mantendo no loop até que ela estaja em nivel logico alto
+        //Lendo o valor da chave mais da direita (SW0) e mantendo no loop até que ela estaja em nível lógico alto
         while (((*dados_sw >> 0) & 1) != 1){
-            SW_read(dados_sw); // Lê os dados enviados pelas chaves, sendo um numero que podemos ver como binario e verificar o numero mais a direita ou seja a chave SW0
+            SW_read(dados_sw); // Lê os dados enviados pelas chaves, sendo um número que podemos ver como binário e verificar o número mais a direita ou seja a chave SW0
         }
     
         system("clear");
@@ -236,26 +236,26 @@
             
             SW_read(dados_sw);
             
-            // Verificando se o usuario decidiu finalizar o programa com SW1 em nivel logico alto
+            // Verificando se o usuário decidiu finalizar o programa com SW1 em nível lógico alto
             if (((*dados_sw >> 1) & 1) == 1){
                 system("clear");
                 printf("\n=====Sistema finalizado!=====\n");
                 return 0;
             } 
-            // Verificando se o usuario iniciou uma partida com a SW0 em nivel logico alto
+            // Verificando se o usuário iniciou uma partida com a SW0 em nivel logico alto
             else if (((*dados_sw >> 0) & 1) == 1){
     
-                // Limpando o console anterior e imprimindo o novo tabuleiro junto de algumas informações para os usuarios
+                // Limpando o console anterior e imprimindo o novo tabuleiro junto de algumas informações para os usuários
                 imprimir_tabuleiro(tabuleiro);
                 quadrante_selecionado = quadrante_atual(coordenadas_atuais[0], coordenadas_atuais[1]);
                 printf("\nRodada Atual: %d\n", rodada);
                 printf("Se deseja realizar a jogada no quadrante atual clique com o botão esquerdo do mouse\n");
                 printf("O quadrante que o jogador %d esta selecionando e: %d\n", jogador_atual + 1, quadrante_selecionado);
     
-                // Leitura dos inputs do mouse junto da confirmação da jogada quando o botão esquerdo do mouse é pressionado
+                // Leitura dos 'inputs' do mouse junto da confirmação da jogada quando o botão esquerdo do mouse é pressionado
                 confirma_jogada = movimento_mouse(fd, data, coordenadas_atuais);
     
-                // Tenta realizar a jogada no local escolhido pelo usuario quando o botão esquedo é pressionado
+                // Tenta realizar a jogada no local escolhido pelo usuário quando o botão esquedo é pressionado
                 if (confirma_jogada == 1)  // Clique do mouse
                 {
                     // Verifica o local escolhido e tenta realizar a jogada, no caso de sucesso retorna 1 e no caso de falha retorna 0
@@ -306,13 +306,13 @@
                 system("clear");
 
             } 
-            // Verifica o inicio de um novo jogo, e caso nenhuma partida tenha sido iniciada (SW0 = 0) então reseta a partida atual para começar uma nova assim que o usuario quiser
+            // Verifica o início de um novo jogo, e caso nenhuma partida tenha sido iniciada (SW0 = 0), então reseta a partida atual para começar uma nova assim que o usuário quiser
             else if (((*dados_sw >> 0) & 1) == 0){
                 resetar_jogo(&jogador_atual, &rodada, &coordenadas_atuais[0], &coordenadas_atuais[1], tabuleiro);
             }
             
     }
-        // Encessa o drive reponsavel por ler as informações das chaves
+        // Encerra o drive responsável por ler as informações das chaves
         SW_close();
         return 0;
     }
