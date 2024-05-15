@@ -124,7 +124,7 @@ O mouse desempenha um papel central no jogo da velha, permitindo que os jogadore
 
 ### ➡️ Controle do jogo por chaves HH
 
-No sistema, duas chaves HH do kit DE1-SoC foi usada para permitir que o usuário reinicie o jogo e finalize o jogo. Para ler os valores digitados nessas chaves, os recursos disponíveis na placa para o sistema operacional foram utilizados. A biblioteca intelfpgaup oferece acesso aos drivers dos dispositivos nativos da placa, com os cabeçalhos das funções disponibilizadas e documentadas em arquivos de extensão ".h". Para incluir essa biblioteca, responsavel pelo controle das chaves foi colocado `#include <intelfpgaup/SW.h>` no início do código. As chaves são ativadas por meio de nível lógico alto.
+No sistema, duas chaves HH do kit DE1-SoC foi usada para permitir que o usuário reinicie o jogo e finalize o jogo. Para ler os valores digitados nessas chaves, os recursos disponíveis na placa para o sistema operacional foram utilizados. A biblioteca intelfpgaup oferece acesso aos drivers dos dispositivos nativos da placa, com os cabeçalhos das funções disponibilizadas e documentadas em arquivos de extensão ".h". Para incluir essa biblioteca, responsável pelo controle das chaves foi colocado `#include <intelfpgaup/SW.h>` no início do código. As chaves são ativadas por meio de nível lógico alto.
 
 Funções das chaves:
 - **SW0:** Iniciar o jogo
@@ -132,7 +132,7 @@ Funções das chaves:
 
 #  📟 Interface do sistema
 
-No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, permitindo que os jogadores interajam com ele através do mouse e das chaves HH. O tabuleiro é representado graficamente com caracteres ASCII simples, e os jogadores selecionam as posições desejadas através mouse. O jogo continua até que um jogador vença ou ocorra um empate, com mensagens indicativas exibidas no terminal para informar o resultado. Essa abordagem oferece uma forma simples e acessível de desfrutar do jogo da velha em sistemas Linux, sem a necessidade de interfaces gráficas complexas. A figura abaixo representa a exibição do sitema no terminal.
+No modo texto do Linux, o jogo da velha é exibido diretamente no terminal, permitindo que os jogadores interajam com ele através do mouse e das chaves HH. O tabuleiro é representado graficamente com caracteres ASCII simples, e os jogadores selecionam as posições desejadas através mouse. O jogo continua até que um jogador vença ou ocorra um empate, com mensagens indicativas exibidas no terminal para informar o resultado. Essa abordagem oferece uma forma simples e acessível de desfrutar do jogo da velha em sistemas Linux, sem a necessidade de interfaces gráficas complexas. A figura abaixo representa a exibição do sistema no terminal.
 ### output
 ```text
 1 | 2 | 3
